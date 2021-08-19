@@ -74,7 +74,7 @@ spec:
             steps{
                 sh ('''
                 echo build number: ${BUILD_NUMBER}
-                imgpkg push -b harbor.tools.azure.nvcodes.net/esf-release/esf:v${BUILD_NUMBER} -f . --registry-username "${KBLD_REGISTRY_USERNAME_0}" --registry-password "${KBLD_REGISTRY_PASSWORD_0}"
+                imgpkg push -b harbor.tools.azure.nvcodes.net/isv-release/bookinfo:v${BUILD_NUMBER} -f . --registry-username "${KBLD_REGISTRY_USERNAME_0}" --registry-password "${KBLD_REGISTRY_PASSWORD_0}"
                 ''')
             }
         }
