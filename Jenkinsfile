@@ -43,24 +43,25 @@ spec:
         }
     }
     stages {
-        stage('checkout'){
-            environment { 
-                GIT_AUTH = credentials('f09786ed-8c24-4d1a-a768-f0b5266383be') 
-            }
-            steps{
-                container('jnlp'){
-                    sh('''
-                        git config --global credential.helper "!f() { echo username=\\$GIT_AUTH_USR; echo password=\\$GIT_AUTH_PSW; }; f"
-                        git config --global user.email "nitashav@vmware.com"
-                        git config --global user.name "nitashav-vmw"
-                        git clone https://github.com/nitashav-vmw/fiserv-esf.git
-                    ''')
-                }
-            }
-        }
+        //stage('checkout'){
+          //  environment { 
+            //    GIT_AUTH = credentials('f09786ed-8c24-4d1a-a768-f0b5266383be') 
+            //}
+            //steps{
+              //  container('jnlp'){
+                //    sh('''
+                  //      git config --global credential.helper "!f() { echo username=\\$GIT_AUTH_USR; echo password=\\$GIT_AUTH_PSW; }; f"
+                    //    git config --global user.email "nitashav@vmware.com"
+                      //  git config --global user.name "nitashav-vmw"
+                       
+                    //''')
+                //}
+            //}
+        //}
         stage('generate-image-reference') {
             steps {
               sh('''
+              ls -a
               mkdir .imgpkg
               kbld -f . --imgpkg-lock-output ./.imgpkg/images.yml
               ls . 
