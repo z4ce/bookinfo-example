@@ -17,7 +17,7 @@ spec:
         app: reviews
         version: v3
     spec:
-      serviceAccountName: bookinfo-reviews
+
       containers:
       - name: reviews
         image: docker.io/istio/examples-bookinfo-reviews-v3:1.16.2

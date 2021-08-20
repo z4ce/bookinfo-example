@@ -17,7 +17,7 @@ spec:
         app: ratings
         version: v1
     spec:
-      serviceAccountName: bookinfo-ratings
+
       containers:
       - name: ratings
         image: docker.io/istio/examples-bookinfo-ratings-v1:1.16.2
