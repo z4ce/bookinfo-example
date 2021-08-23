@@ -2,8 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: productpage-ingress
-  annotations:
-    ianz: triggerbuild
 spec:
   rules:
   - host: bookinfo.tools.azure.nvcodes.net
