@@ -6,7 +6,7 @@ metadata:
     ianz: triggerbuild
 spec:
   rules:
-  - host: bookinfo.tools.azure.nvcodes.net
+  - host: bookinfo.isv.com
     http:
       paths:
       - path: /
