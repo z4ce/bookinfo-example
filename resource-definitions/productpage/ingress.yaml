@@ -4,6 +4,7 @@ metadata:
   name: productpage-ingress
   annotations:
     ianz: triggerbuild
+    springone: demo
 spec:
   rules:
   - host: bookinfo.isv.com
